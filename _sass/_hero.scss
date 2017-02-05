@@ -15,15 +15,11 @@
         display: flex;
 
         &__item {
-            color: #fff;
+            color: #fff !important;
             display: block;
             margin: 0 2em;
             text-transform: uppercase;
             letter-spacing: 1px;
-            
-            &:hover {
-                color: #fff;
-            }
         }
     }
 
