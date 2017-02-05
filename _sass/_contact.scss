@@ -1,0 +1,19 @@
+
+.contact {
+    &-wrapper {
+        padding: 80px;
+        background: #eee url(/img/contact_bg.jpg) center;
+        background-size: cover;
+        background-position: 50% 0;
+    }
+
+    .page-summary h1 {
+        color: #fff;
+    }
+
+    .form {
+        width: 800px;
+        margin: 0 auto;
+        max-width: 100%;
+    }
+}

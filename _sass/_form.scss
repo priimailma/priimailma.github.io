@@ -1,0 +1,49 @@
+
+$form-padding: 10px;
+
+.form {
+    display: flex;
+    flex-wrap: wrap;
+
+    &__item {
+        padding: $form-padding;
+        width: 50%;
+
+        &--center,
+        &--full {
+            width: 100%;
+        }
+
+        &--center {
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    .form__input {
+        border: none;
+        background: #fff;
+        font: $secondary-font;
+        font-size: 90%;
+        padding: 20px;
+        width: 100%;
+
+        &--textarea {
+            height: 10em;
+        }
+    }
+
+    .form__button {
+        background: #95acba;
+        border: 2px solid #555;
+        border-radius: 50px;
+        color: #555;
+        display: block;
+        font: inherit;
+        height: 50px;
+        line-height: 50px;
+        padding: 0 100px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+}
