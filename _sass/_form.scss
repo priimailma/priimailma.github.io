@@ -7,11 +7,16 @@ $form-padding: 10px;
 
     &__item {
         padding: $form-padding;
-        width: 50%;
+        flex-basis: 50%;
+        max-width: 100%;
+
+        @media all and (max-width: 930px) {
+            flex-basis: 100%;
+        }
 
         &--center,
         &--full {
-            width: 100%;
+            flex-basis: 100%;
         }
 
         &--center {
