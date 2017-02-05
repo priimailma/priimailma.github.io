@@ -1,0 +1,13 @@
+
+.footer {
+    align-items: center;
+    background: #95acba;
+    display: flex;
+    justify-content: flex-end;
+    padding: 10vw;
+
+    &__logo {
+        height: 48px;
+        opacity: .64;
+    }
+}
