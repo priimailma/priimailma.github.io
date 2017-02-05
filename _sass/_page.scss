@@ -1,0 +1,23 @@
+.page {
+    width: 1240px;
+    margin: 0 auto;
+    max-width: 100%;
+    padding: 80px;
+
+    &-summary {
+        width: 540px;
+        margin: 0 auto 80px;
+        max-width: 100%;
+        text-align: center;
+        
+        h1 {
+            color: $brand-color;
+            font-size: 200%;
+            padding-bottom: 1em;
+        }
+
+        p {
+            font: $secondary-font;
+        }
+    }
+}
