@@ -1,12 +1,6 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <script>
-        if (! localStorage.getItem('authed')) {
-            window.location = '/401';
-        }
-        </script>
-
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -21,9 +15,17 @@
     </head>
 
     <body>
+        <script>
 
-        {{ content }}
+        var password = prompt('Salasana');
 
-        <script src="{{ "/js/main.js" | prepend: site.baseurl }}"></script>
+        if (password === 'salasana1') {
+            localStorage.setItem('authed', 1);
+            window.location = '/';
+        } else {
+            window.location = '/401';
+        }
+
+        </script>
     </body>
 </html>
