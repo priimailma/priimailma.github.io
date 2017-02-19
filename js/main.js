@@ -8,7 +8,7 @@
       speed = 0.6;
 
   // Run when the user scrolls
-  window.onscroll = function() {
+  window.onscroll = function () {
     showOrHideMenu();
     parallaxElements();
   };
@@ -24,7 +24,7 @@
 
   // Move the bg of elements in parallax effect if visible
   function parallaxElements() {
-    [].slice.call(parallax).forEach(function(el) {
+    [].slice.call(parallax).forEach(function (el) {
       if (! isVisibleOnScreen(el)) {
         return;
       }
@@ -45,7 +45,7 @@
     );
   }
 
-  
+  // responsive menu
   menu.addEventListener('click', function (e) {
     // if the menu-tricker el is visible (then menu is in the responsive mode)
     if (menu.querySelector('#menu-tricker').getBoundingClientRect().width !== 0) {
@@ -54,4 +54,8 @@
     }
   });
 
+  // initialize the smooth scrolling for menus
+  smoothScroll.init({
+    offset: menu.offsetHeight,
+  });
 })();
