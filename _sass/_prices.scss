@@ -1,0 +1,16 @@
+
+.prices {
+    padding: 10vw;
+
+    @media all and (max-width: 1000px) {
+        padding: 5vw;
+    }
+
+    .page-summary {
+        padding-top: 14px;
+    }
+
+    .list__footer {
+        padding-bottom: 14px;
+    }
+}

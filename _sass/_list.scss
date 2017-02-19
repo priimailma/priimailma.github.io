@@ -26,6 +26,14 @@
         font-size: 95%;
     }
 
+    &__subtitle {
+        color: rgba(0, 0, 0, .56);
+        text-align: center;
+        font: $secondary-font;
+        font-size: 65%;
+        margin-top: 2em;
+    }
+
     &__button {
         line-height: 30px;
         border: 1px solid #333;
@@ -45,6 +53,12 @@
             color: #fff;
             text-decoration: none;
         }
+
+        &--big {
+            width: 128px;
+            padding: .5em;
+            letter-spacing: 1px;
+        }
     }
 
     &__description {
@@ -57,5 +71,14 @@
         &:after {
             content: '"';
         }
+    }
+
+    &__footer {
+        padding: 40px 20px 0;
+        border-top: 1px solid #eee;
+        color: rgba(0, 0, 0, .56);
+        text-align: center;
+        font: $secondary-font;
+        font-size: 65%;
     }
 }
