@@ -14,9 +14,9 @@ dl, dd, ol, ul, figure {
     box-sizing: border-box;
 }
 
-// for debugging
-section:nth-child(even) {
-    background-color: #eee;
+.parallax {
+    // not (yet) doing anything in any browser
+    will-change: background-position; 
 }
 
 
