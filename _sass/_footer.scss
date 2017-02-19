@@ -4,10 +4,11 @@
     background: #95acba;
     display: flex;
     justify-content: flex-end;
+    max-height: 128px;
     padding: 10vw;
 
     &__logo {
-        height: 48px;
+        height: 5vw;
         opacity: .64;
     }
 }

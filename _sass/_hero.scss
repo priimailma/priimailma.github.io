@@ -14,6 +14,12 @@
     &__nav {
         display: flex;
 
+        @media all and (max-width: 900px) {
+            opacity: 0;
+            height: 0;
+            pointer-events: none;
+        }
+
         &__item {
             color: #fff !important;
             display: block;
@@ -43,9 +49,10 @@
 
 .logo {
     margin-bottom: 2em;
+    padding: 0 5vw;
 
     img {
-        height: 64px;
+        max-height: 64px;
         margin: 0 auto;
     }
 
