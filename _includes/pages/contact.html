@@ -7,6 +7,8 @@
 
         <form action="https://formspree.io/toimisto@priimailma.fi" method="POST" class="form">
             <input type="text" name="_gotcha" style="display:none">
+            <input type="hidden" name="_subject" value="Uusi yhteydenottopyyntö kotisivuilta">
+            <input type="hidden" name="_next" value="{{ site.url }}/kiitos">
 
             <div class="form__item">
                 <input class="form__input" type="text" name="Etunimi" placeholder="Etunimi">
