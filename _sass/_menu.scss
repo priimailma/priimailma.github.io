@@ -27,11 +27,11 @@
 
     &__link {
         color: $brand-color;
-        font: $secondary-font;
         font-size: 90%;
         display: block;
-        margin: 0 10px;
+        margin: 0 30px;
         text-transform: uppercase;
+        letter-spacing: 1px;
 
         &:visited,
         &:hover,
