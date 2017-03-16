@@ -13,7 +13,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
 
         <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
-        
+
         <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
         <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300|Raleway:700">
@@ -27,7 +27,7 @@
 
         <script src="{{ "/js/smooth-scroll.min.js" | prepend: site.baseurl }}"></script>
         <script src="{{ "/js/main.js" | prepend: site.baseurl }}"></script>
-        <script src="js/instantclick.min.js" data-no-instant></script>
+        <script src="/js/instantclick.min.js" data-no-instant></script>
         <script data-no-instant>InstantClick.init();</script>
     </body>
 </html>
