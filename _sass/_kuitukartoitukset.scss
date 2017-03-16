@@ -32,7 +32,7 @@
 }
 
 .page.note {
-    background: blue url(/img/contact_bg.jpg) center;
+    background: $brand-color url(/img/contact_bg.jpg) center;
     background-size: cover;
     color: rgba(255, 255, 255, .87);
     text-align: center;
