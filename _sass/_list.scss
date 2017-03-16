@@ -47,17 +47,14 @@
         transition: all 100ms;
         width: 100px;
         text-align: center;
+        padding: .5em;
+        letter-spacing: 1px;
+        width: 128px;
 
         &:hover {
             background: #333;
             color: #fff;
             text-decoration: none;
-        }
-
-        &--big {
-            width: 128px;
-            padding: .5em;
-            letter-spacing: 1px;
         }
     }
 

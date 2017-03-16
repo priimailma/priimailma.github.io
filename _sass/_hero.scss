@@ -14,6 +14,12 @@
     &__nav {
         display: flex;
 
+        &__item {
+            font-family: $base-font-family;
+            font-weight: $base-font-weight;
+            font-size: 90%;
+        }
+
         @media all and (max-width: 900px) {
             opacity: 0;
             height: 0;

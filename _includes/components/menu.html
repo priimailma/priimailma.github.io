@@ -3,11 +3,27 @@
     <img class="menu__logo" src="/img/logo.png" alt="Priimailma Oy logo">
 
     <div class="menu__links">
-        <a class="menu__link menu__link--mobile" id="menu-tricker">Menu</a>
         <a data-scroll class="menu__link" href="/demo#etusivu">Etusivu</a>
         <a data-scroll class="menu__link" href="/demo#palvelut">Palvelut</a>
         <a data-scroll class="menu__link" href="/demo#referaatti">Referaatti</a>
         <a data-scroll class="menu__link" href="/demo#hinnasto">Hinnasto</a>
         <a data-scroll class="menu__link" href="/demo#ota-yhteytta">Ota yhteyttä</a>
+    </div>
+
+    <div class="menu__links menu__links--mobile">
+        <a data-scroll class="menu__link" href="/demo#etusivu">Etusivu</a>
+        <a data-scroll class="menu__link" href="/demo#palvelut">Palvelut</a>
+        <a data-scroll class="menu__link" href="/demo#referaatti">Referaatti</a>
+        <a data-scroll class="menu__link" href="/demo#hinnasto">Hinnasto</a>
+        <a data-scroll class="menu__link" href="/demo#ota-yhteytta">Ota yhteyttä</a>
+
+        <div class="menu__links__logo__wrapper">
+            <img class="menu__links__logo" src="/img/logo.png" alt="Priimailma Oy logo">
+        </div>
+    </div>
+
+    <div class="icon" id="menu-tricker">
+        <div class="close">{% include close.svg %}</div>
+        <div class="open active">{% include menu.svg %}</div>
     </div>
 </nav>

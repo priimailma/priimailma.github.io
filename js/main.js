@@ -12,7 +12,6 @@
     showOrHideMenu();
     parallaxElements();
   };
-
   window.onscroll();
 
   // Show the static menu if scrolled beyond the hero section
@@ -51,12 +50,17 @@
     );
   }
 
+  var tricker = menu.querySelector('#menu-tricker');
+
   // responsive menu
   menu.addEventListener('click', function (e) {
     // if the menu-tricker el is visible (then menu is in the responsive mode)
-    if (menu.querySelector('#menu-tricker').getBoundingClientRect().width !== 0) {
+    if (tricker.getBoundingClientRect().width !== 0) {
       // just toggle the the opening state whatever is it open now or not
-      menu.querySelector('.menu__links').classList.toggle('menu__links--open');
+      menu.querySelector('.menu__links--mobile').classList.toggle('menu__links--open');
+
+      tricker.querySelector('.close').classList.toggle('active');
+      tricker.querySelector('.open').classList.toggle('active');
     }
   });
 
