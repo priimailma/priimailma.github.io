@@ -1,5 +1,5 @@
 (function () {
-  
+
   var menu = document.querySelector('.menu');
   var hero = document.querySelector('.hero');
 
@@ -12,6 +12,8 @@
     showOrHideMenu();
     parallaxElements();
   };
+
+  window.onscroll();
 
   // Show the static menu if scrolled beyond the hero section
   function showOrHideMenu() {
@@ -32,15 +34,19 @@
       el.style.backgroundPosition = '50% ' + parseInt(window.pageYOffset * speed) + 'px';
     });
   }
-  
+
   // Check is the given el visible on the screen
   // with optional threshold.
   function isVisibleOnScreen(elm, threshold) {
+    if (! elm) {
+        return false;
+    }
+
     var viewHeight = Math.max(document.documentElement.clientHeight, window.innerHeight);
     var rect = elm.getBoundingClientRect();
 
     return ! (
-      rect.bottom - (threshold || 0) < 0 || 
+      rect.bottom - (threshold || 0) < 0 ||
       rect.top - viewHeight >= 50
     );
   }
