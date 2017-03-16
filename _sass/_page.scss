@@ -24,4 +24,26 @@
             font: $secondary-font;
         }
     }
+
+    &--of-two {
+        display: flex;
+        justify-content: space-between;
+
+        > * {
+            width: 45%;
+        }
+
+        @media all and (max-width: 900px) {
+            flex-direction: column;
+
+            & > * {
+                width: 100%;
+                margin-bottom: 5em;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
 }
