@@ -26,6 +26,10 @@
         max-height: 28px;
         max-width: 226px;
         z-index: 1;
+
+        @media all and (max-width: 1000px) {
+            max-height: 20px;
+        }
     }
 
     &__links {
