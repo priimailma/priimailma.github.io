@@ -4,6 +4,11 @@
     max-width: 100%;
     padding: 10vh 5vw;
 
+    &--tall {
+        height: 90%;
+        padding-top: 10em;
+    }
+
     &-summary {
         width: 540px;
         margin: 0 auto 5vw;

@@ -24,6 +24,16 @@ dl, dd, ol, ul, figure {
 }
 
 
+.divider {
+    border: none;
+    background: none;
+    border-bottom: 1px solid #6b9fbb;
+    width: 100%;
+    max-width: 960px;
+    margin: 5em auto;
+}
+
+
 /**
  * Basic styling
  */

@@ -1,0 +1,21 @@
+
+.thanks {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0;
+
+
+    h1 {
+        color: $brand-color;
+        text-transform: uppercase;
+        font-size: 2.5em;
+        word-break: break-word;
+    }
+
+    p {
+        font: $secondary-font;
+    }
+}
