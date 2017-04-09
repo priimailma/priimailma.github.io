@@ -3,8 +3,32 @@
     align-items: center;
     background: #95acba;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     padding: 5vw;
+
+    @media all and (max-width: 650px) {
+        flex-direction: column;
+
+        &__contacts {
+            padding-bottom: 3vh;
+            text-align: center;
+        }
+
+        &__logo {
+            height: auto !important;
+        }
+    }
+
+    &__contacts {
+        display: flex;
+        align-items: center;
+
+        span {
+            padding-right: 2em;
+            color: #d9e1e6;
+            display: block;
+        }
+    }
 
     &__logo {
         max-height: 48px;
