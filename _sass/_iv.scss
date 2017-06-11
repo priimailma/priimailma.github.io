@@ -1,5 +1,14 @@
 
 .iv {
+    &.note.iv--cleaning {
+        background-image: url(/img/iv-note-bg.jpg);
+        background-attachment: fixed;
+    }
+    
+    &.note.iv--install {
+        background-image: url(/img/iv-install-bg.jpg);
+    }
+
     h1 {
         word-break: initial;
 
@@ -52,6 +61,10 @@
 .iv-prices-and-services {
     margin: 0 auto;
     max-width: 900px;
+
+    .list__button {
+        margin-top: 2em;
+    }
 }
 
 
