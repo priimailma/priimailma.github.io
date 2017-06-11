@@ -7,12 +7,24 @@
   var parallax = document.querySelectorAll('.parallax'),
       speed = 0.6;
 
-  // Run when the user scrolls
+  var scrolled = true;
+
   window.onscroll = function () {
-    showOrHideMenu();
-    parallaxElements();
+    scrolled = true;
   };
-  window.onscroll();
+
+  function animate() {
+    if (scrolled) {
+      showOrHideMenu();
+      parallaxElements();
+      
+      scrolled = false;
+    }
+
+    window.requestAnimationFrame(animate);
+  }
+  
+  animate();
 
   // Show the static menu if scrolled beyond the hero section
   function showOrHideMenu() {
