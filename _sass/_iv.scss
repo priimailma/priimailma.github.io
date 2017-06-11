@@ -1,0 +1,57 @@
+
+.iv {
+    h1 {
+        word-break: initial;
+
+        @media (max-width: 630px) {
+            font-size: 1.5em;
+            font-size: 6vw;
+        }
+    }
+
+    .list {
+        max-width: 800px;
+        margin: 0 auto;
+        word-break: break-all
+    }
+
+    &.note {
+        p {
+            max-width: 700px;
+            margin: 3em auto 0;
+            font: $secondary-font;
+        }
+    }
+
+    &-when {
+        h2 {
+            padding-bottom: 1em;
+        }
+
+        p {
+            max-width: 700px;
+            margin: 1em auto;
+        }
+    }
+
+    &-report-text {
+        margin: 0 auto;
+        max-width: 600px;
+    }
+}
+
+.p-list {
+    max-width: 522px;
+    margin: 0 auto;
+
+    .list__title {
+        white-space: initial;
+    }
+}
+
+.iv-prices-and-services {
+    margin: 0 auto;
+    max-width: 900px;
+}
+
+

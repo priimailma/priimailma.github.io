@@ -31,6 +31,10 @@ dl, dd, ol, ul, figure {
     width: 100%;
     max-width: 960px;
     margin: 5em auto;
+
+    &--line {
+        margin: 0 auto;
+    }
 }
 
 
