@@ -4,14 +4,25 @@
     background: #95acba;
     display: flex;
     justify-content: space-between;
-    padding: 5vw;
+    padding: 4vw;
 
-    @media all and (max-width: 650px) {
+    @media all and (max-width: 1330px) {
         flex-direction: column;
 
         &__contacts {
-            padding-bottom: 3vh;
+            padding-bottom: 5vh;
             text-align: center;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            & > div {
+                padding: 2vh 3vh;
+                text-align: center;
+            }
+
+            span {
+                padding-right: 0 !important;
+            }
         }
 
         &__logo {
@@ -24,14 +35,14 @@
         align-items: center;
 
         span {
-            padding-right: 2em;
+            padding-right: 4em;
             color: #d9e1e6;
             display: block;
         }
     }
 
     &__logo {
-        max-height: 48px;
+        max-height: 38px;
         height: 5vw;
         opacity: .64;
     }
